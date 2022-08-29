@@ -6,6 +6,10 @@ CPU: Intel(R) Core(TM) i7-11390H CPU @ 4.80GHz
 Memory: 16GB  
 OS: Arch Linux Kernel 5.19.3
 
+## Test Info
+
+WRK was used as an HTTP benchmark tool. Each server was tested 5 times and the requests per second are averaged. The command used is `wrk -t6 -c512 -d30s http://localhost:3000`. The Typescript servers were compiled down to Javascript then ran with Node 18. The Rust servers were built for release then ran as binaries. For the Mongo tests I used Mongo running on my local machine. 
+
 ## Plain Text
 
 Each server just returns a string of plain text.
