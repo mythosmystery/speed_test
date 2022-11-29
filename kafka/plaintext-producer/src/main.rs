@@ -3,7 +3,7 @@ use std::time::Duration;
 use kafka::producer::{Producer, Record, RequiredAcks};
 use serde_json::json;
 
-const MESSAGE_COUNT: u32 = 2;
+const MESSAGE_COUNT: u32 = 99999;
 fn main() {
     let mut producer = Producer::from_hosts(vec!["localhost:9092".to_owned()])
         .with_ack_timeout(Duration::from_secs(1))
