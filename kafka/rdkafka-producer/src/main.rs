@@ -6,12 +6,12 @@ use rdkafka::{
 use serde_json::json;
 
 const TOPIC: &str = "speed-test";
-const NUM_MESSAGES: i32 = 10_000;
+const NUM_MESSAGES: i32 = 1000;
 
 #[tokio::main]
 async fn main() {
     let producer = ClientConfig::new()
-        .set("bootstrap.servers", "localhost:9092")
+        .set("bootstrap.servers", "10.13.37.32:9092")
         .set("message.timeout.ms", "5000")
         .create::<FutureProducer<_>>()
         .expect("Producer creation error");
