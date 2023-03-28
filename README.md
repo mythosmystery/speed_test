@@ -105,4 +105,4 @@ Rocket Rust:
 - 170,000 req/s
 
 Actix Rust:
-- 
+- 203,000 req/s
