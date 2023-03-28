@@ -92,3 +92,17 @@ Actix Rust:
 - 28,968 requests per second
 - 29,538 requests per second
   Average of 28,968 requests per second
+  
+  
+## Tests with Apple Silicon M1
+
+### Plaintext
+
+Tide Rust:
+- 115,000 req/s
+
+Rocket Rust:
+- 170,000 req/s
+
+Actix Rust:
+- 
